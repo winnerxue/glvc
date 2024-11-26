@@ -19,6 +19,10 @@ func (sb *Builder) WriteRune(r rune) (int, error) {
 	return sb.buf.WriteRune(r)
 }
 
+func (sb *Builder) Write(p []byte) (int, error) {
+	return sb.buf.Write(p)
+}
+
 func (sb *Builder) String() string {
 	return sb.buf.String()
 }
